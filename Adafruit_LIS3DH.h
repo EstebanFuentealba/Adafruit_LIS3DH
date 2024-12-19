@@ -392,7 +392,7 @@ public:
   lis3dh_dataRate_t getDataRate(void);
 
   bool getEvent(sensors_event_t *event);
-  void getSensor(sensor_t *sensor);
+  void getSensor(sensor_adafruit_t *sensor);
 
   void setClick(uint8_t c, uint8_t clickthresh, uint8_t timelimit = 10,
                 uint8_t timelatency = 20, uint8_t timewindow = 255);
