@@ -534,13 +534,13 @@ bool Adafruit_LIS3DH::getEvent(sensors_event_t *event) {
 }
 
 /*!
- *   @brief  Gets the sensor_t data
+ *   @brief  Gets the sensor_adafruit_t data
  *   @param  *sensor
  *           sensor that we want to write data into
  */
-void Adafruit_LIS3DH::getSensor(sensor_t *sensor) {
-  /* Clear the sensor_t object */
-  memset(sensor, 0, sizeof(sensor_t));
+void Adafruit_LIS3DH::getSensor(sensor_adafruit_t *sensor) {
+  /* Clear the sensor_adafruit_t object */
+  memset(sensor, 0, sizeof(sensor_adafruit_t));
 
   /* Insert the sensor name in the fixed length char array */
   strncpy(sensor->name, "LIS3DH", sizeof(sensor->name) - 1);
